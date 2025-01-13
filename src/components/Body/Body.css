@@ -1,58 +1,248 @@
-.body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    padding: 20px;
-    color: #333;
+/* General styles */
+body {
+  font-family: "Josefin Sans", serif;
+  line-height: 1.6;
+  padding: 20px;
+  color: #333;
+  background-color: #333;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h2 {
+  color: wheat;
+  margin-bottom: 20px;
+}
+
+a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Project and About Me section styles */
+.projects-section, .about-me-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto; /* Remove fixed height to reduce unnecessary space */
+  background-color: #2d2d2d;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+  margin-bottom: 30px; /* Reduced gap between sections */
+}
+
+.terminal {
+  width: 60%;
+  max-width: 800px;
+  background: #2d2d2d;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.terminal-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: #3c3c3c;
+}
+
+.terminal-header .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.terminal-header .dot.red {
+  background: #ff5f56;
+}
+
+.terminal-header .dot.yellow {
+  background: #ffbd2e;
+}
+
+.terminal-header .dot.green {
+  background: #27c93f;
+}
+
+.terminal-body {
+  padding: 20px;
+  font-size: 1rem;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+.command-line {
+  display: flex;
+  align-items: center;
+}
+
+.prompt {
+  color: #0ff;
+}
+
+.blinking-cursor {
+  border-left: 2px solid #0ff;
+  animation: blink 0.7s steps(1) infinite;
+}
+
+.project-list, .about-me-description {
+  margin-top: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+.project-item {
+  color: #0f0;
+  margin: 5px 0;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.about-me-description {
+  color: #d3d3d3; /* Light text color */
+  font-family: 'Courier New', Courier, monospace; /* Monospaced font for terminal aesthetic */
+  margin-top: 20px;
+  padding: 20px;
+  line-height: 1.5;
+  max-width: 80%; /* Responsive width */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-me-description h2 {
+  font-size: 2rem;
+}
+
+.about-me-description h3 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.about-me-description p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.about-me-description ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.about-me-description li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.about-me-description li::before {
+  content: '→';
+  margin-right: 8px;
+}
+
+.about-me-description .technologies {
+  margin-top: 20px;
+}
+
+.about-me-description .technologies li {
+  padding-left: 20px;
+  font-size: 1rem;
+}
+
+.project-item, .about-me-description li {
+  color: #0f0; /* Green color for terminal-like items */
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.about-me-description .technologies li {
+  color: #fff;
+}
+.achievements-section{
+  text-align: center;
+}
+.full-page-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+}
+
+.full-page-animation .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.close-button:hover {
+  color: #ff4c4c;
+  transform: scale(1.2);
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.circle-container {
+  /* Ensures the animation works well in fullscreen */
+  width: 300px;
+  height: 300px;
+}
+/* Animation keyframes */
+@keyframes blink {
+  50% {
+    border-color: transparent;
   }
-  
-  h2 {
-    color: #4CAF50;
-    margin-bottom: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
   }
-  
-  .about-me, .projects, .achievements, .contact {
-    margin-bottom: 40px;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .code-container {
-    background-color: #282c34;
-    border-radius: 5px;
-    padding: 20px;
-    color: #61dafb;
-    font-family: 'Courier New', Courier, monospace;
-    margin-top: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    animation: fade-in 2s ease-in-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
   }
-  
-  .code-snippet {
-    white-space: pre-wrap;
-    overflow-wrap: break-word;
+  to {
+    opacity: 1;
   }
-  
-  a {
-    color: #4CAF50;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  ul {
-    padding-left: 20px;
-  }
-  
-  li {
-    margin-bottom: 10px;
-  }
-  
-  @keyframes fade-in {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
+}

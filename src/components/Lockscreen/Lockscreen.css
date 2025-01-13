@@ -1,0 +1,45 @@
+.lockscreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #2c3e50, #4ca1af);
+    color: #fff;
+    text-align: center;
+  }
+  
+  .lockscreen-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .account-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .username {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .unlock-button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .unlock-button:hover {
+    background-color: #45a049;
+  }
+  

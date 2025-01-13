@@ -1,0 +1,67 @@
+/* Nav.css */
+
+.ubuntu-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 70px;
+  background-color: #2c001e; /* Ubuntu aubergine */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.nav-item {
+  text-align: center;
+}
+
+.nav-link {
+  font-size: 1.5rem;
+  color: #ff8c00; /* Ubuntu orange */
+  text-decoration: none;
+  padding: 0.5rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #fff;
+  transform: scale(1.2);
+}
+
+.nav-link i {
+  display: block;
+}
+
+/* Tooltip */
+.nav-link[title]::after {
+  content: attr(title);
+  position: absolute;
+  left: 80px;
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-50%);
+  transition: opacity 0.3s ease;
+  white-space: nowrap;
+}
+
+.nav-link:hover[title]::after {
+  opacity: 1;
+  visibility: visible;
+}
