@@ -18,7 +18,7 @@ function App() {
   const handleCloseAchievements = () => setShowAchievements(false);
 
   return (
-    <Router>
+    <Router basename="/roba_portfolio">
       <div style={{ display: 'flex' }}>
         {!isLocked && <Nav onAchievementsClick={handleShowAchievements} />}
         <div style={{ marginLeft: !isLocked ? '70px' : '0', width: '100%' }}>
