@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/roba_portfolio/static/css/main.01fa0065.css",
-    "main.js": "/roba_portfolio/static/js/main.8fbe4c3d.js",
+    "main.js": "/roba_portfolio/static/js/main.2a0260ed.js",
     "static/media/algorithmxhub.jpg": "/roba_portfolio/static/media/algorithmxhub.01d82b9555e23d31bfc8.jpg",
     "static/media/codewardbu.jpg": "/roba_portfolio/static/media/codewardbu.a1fbea042f9998e48a58.jpg",
     "static/media/xhub.jpg": "/roba_portfolio/static/media/xhub.d9e0144314d358187411.jpg",
@@ -10,10 +10,10 @@
     "static/media/portprofile.jpg": "/roba_portfolio/static/media/portprofile.66dbaf0e177a4ef0d94f.jpg",
     "index.html": "/roba_portfolio/index.html",
     "main.01fa0065.css.map": "/roba_portfolio/static/css/main.01fa0065.css.map",
-    "main.8fbe4c3d.js.map": "/roba_portfolio/static/js/main.8fbe4c3d.js.map"
+    "main.2a0260ed.js.map": "/roba_portfolio/static/js/main.2a0260ed.js.map"
   },
   "entrypoints": [
     "static/css/main.01fa0065.css",
-    "static/js/main.8fbe4c3d.js"
+    "static/js/main.2a0260ed.js"
   ]
 }
