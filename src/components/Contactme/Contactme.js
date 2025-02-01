@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react';
 import './Contactme.css'
 
 function Contactme() {
   return (
-    <section className="contact-me">
+
+   <section className="contact-me">
       <h2 className="contact-title">Stay Connected</h2>
       <p className="contact-subtitle">Find me on these platforms:</p>
       <div className="social-icons-container">
@@ -17,16 +18,19 @@ function Contactme() {
         <i className="fab fa-gitlab"></i>
        </a>
 
-        {/* <a href="https://twitter.com/your-profile" target="_blank" rel="noopener noreferrer" className="social-icon">
+         <a href="https://twitter.com/your-profile" target="_blank" rel="noopener noreferrer" className="social-icon">
           <i className="fab fa-twitter"></i>
-        </a> */}
+        </a> 
         <a href="mailto:gamingwizeazy@gmail.com" className="social-icon">
           <i className="fas fa-envelope"></i>
         </a>
       </div>
+
+     
     </section>
-  
+   
   );
+  
 }
 
 export default Contactme
