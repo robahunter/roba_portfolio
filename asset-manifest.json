@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/roba_portfolio/static/css/main.01fa0065.css",
-    "main.js": "/roba_portfolio/static/js/main.2a0260ed.js",
-    "static/media/algorithmxhub.jpg": "/roba_portfolio/static/media/algorithmxhub.01d82b9555e23d31bfc8.jpg",
-    "static/media/codewardbu.jpg": "/roba_portfolio/static/media/codewardbu.a1fbea042f9998e48a58.jpg",
+    "main.css": "/roba_portfolio/static/css/main.33ab83d2.css",
+    "main.js": "/roba_portfolio/static/js/main.f4c3d0ba.js",
     "static/media/xhub.jpg": "/roba_portfolio/static/media/xhub.d9e0144314d358187411.jpg",
     "static/media/udacity.png": "/roba_portfolio/static/media/udacity.8ce71b86f99937627552.png",
+    "static/media/codewar.jpg": "/roba_portfolio/static/media/codewar.32d1a1fe0ede4b8547a0.jpg",
     "static/media/adventofcy.jpg": "/roba_portfolio/static/media/adventofcy.45f11192e07f91558d35.jpg",
     "static/media/portprofile.jpg": "/roba_portfolio/static/media/portprofile.66dbaf0e177a4ef0d94f.jpg",
+    "static/media/algo.jpg": "/roba_portfolio/static/media/algo.47bedc1716f915204ec8.jpg",
     "index.html": "/roba_portfolio/index.html",
-    "main.01fa0065.css.map": "/roba_portfolio/static/css/main.01fa0065.css.map",
-    "main.2a0260ed.js.map": "/roba_portfolio/static/js/main.2a0260ed.js.map"
+    "main.33ab83d2.css.map": "/roba_portfolio/static/css/main.33ab83d2.css.map",
+    "main.f4c3d0ba.js.map": "/roba_portfolio/static/js/main.f4c3d0ba.js.map"
   },
   "entrypoints": [
-    "static/css/main.01fa0065.css",
-    "static/js/main.2a0260ed.js"
+    "static/css/main.33ab83d2.css",
+    "static/js/main.f4c3d0ba.js"
   ]
 }
