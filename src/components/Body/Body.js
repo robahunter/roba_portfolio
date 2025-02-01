@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Body.css';
 import Achievement from '../achiemenents/Achievement';
 import { FaTimes } from "react-icons/fa"; 
+import profileimg from '../../assets/portprofile.jpg';
 
 
 const Body = ({ showAchievements, handleCloseAchievements }) => {
@@ -96,9 +97,21 @@ const Body = ({ showAchievements, handleCloseAchievements }) => {
 
 
   return (
+    
     <div>
+    
+    <div className="profile-container">
+        <img src={profileimg} alt="Profile" className="account-pic" />
+        <h1 className="username">Robera Getachew</h1>
+        <p>Web Developer | Bug Bounty Hunter | Tech Enthusiast</p>
+      </div>
+
       <main className="body">
+     
+        
+        
         <section id="aboutMe" className="about-me-section">
+       
           <div className="terminal">
             <div className="terminal-header">
               <span className="dot red"></span>

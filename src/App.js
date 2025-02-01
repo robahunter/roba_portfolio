@@ -20,11 +20,11 @@ function App() {
   return (
     <Router basename="/roba_portfolio">
       <div style={{ display: 'flex' }}>
-        {!isLocked && <Nav onAchievementsClick={handleShowAchievements} />}
+        { <Nav onAchievementsClick={handleShowAchievements} />}
         <div style={{ marginLeft: !isLocked ? '70px' : '0', width: '100%' }}>
-          {isLocked ? (
+          {/* {isLocked ? (
             <Lockscreen onUnlock={handleUnlock} />
-          ) : (
+          ) : ( */}
             <>
               <Routes>
                 <Route
@@ -53,7 +53,7 @@ function App() {
                 </div>
               )}
             </>
-          )}
+          {/* )} */}
         </div>
       </div>
     </Router>

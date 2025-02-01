@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { FaTimes } from "react-icons/fa"; // Import Font Awesome close icon
 import "./Achievement.css";
 import adc from "../../assets/certs/adventofcy.jpg";
-import codewar from "../../assets/certs/codewardbu.jpg";
+import codewar from "../../assets/certs/codewar.jpg";
 import uda from "../../assets/certs/udacity.png";
 import xhub from "../../assets/certs/xhub.jpg";
-import algorithmxhub from "../../assets/certs/algorithmxhub.jpg"
+import algorithmxhub from "../../assets/certs/algo.jpg"
 
 const Achievement = () => {
   const [fullImage, setFullImage] = useState(null);
